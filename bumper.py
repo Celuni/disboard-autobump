@@ -8,11 +8,11 @@ import asyncio
 import discord
 from discord.ext import commands 
 
+logging.basicConfig(level='INFO')
+
 bot = commands.Bot(description='DISBOARD.com Bumper bot. V1.0 - ©2019 aper.me', command_prefix=['bumper ', 'Bumper ']) 
 
 TOKEN = os.environ["TOKEN"]
-
-logging.basicConfig(level='INFO')
 
 @bot.command(aliases=['bump'])
 async def start(ctx):
